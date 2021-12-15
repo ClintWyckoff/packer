@@ -17,7 +17,7 @@
       "RAM": "{{user `vm-mem-size`}}",
       "RAM_reserve_all": true,
       "firmware": "bios",
-  
+
       "storage": [
         {
           "disk_size": "{{user `os-disk-size`}}",
@@ -25,14 +25,14 @@
         }
       ],
       "disk_controller_type": "lsilogic-sas",
-          
+
       "network_adapters": [
         {
           "network": "{{user `vsphere-network`}}",
           "network_card": "vmxnet3"
         }
       ],
-           
+
       "boot_wait": "5s",
       "boot_command": [
         " <wait><enter><wait>",
@@ -57,13 +57,14 @@
         "ssh_username": "ubuntu",
         "ssh_password": "ubuntu",
         "ssh_timeout": "20m",
+        "ssh_handshake_attempts": "100",
         "ssh_port": 22,
         "http_directory": "http",
-        
+
         "iso_paths": ["{{user `os_iso_path`}}"]
       }
     ],
-        
+
   "provisioners": [
     {
       "execute_command": "echo '{{ user `ssh_password` }}' | {{.Vars}} sudo -E -S bash '{{.Path}}'",

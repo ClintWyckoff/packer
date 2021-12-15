@@ -11,7 +11,8 @@ autoinstall:
   identity:
     {
       hostname: ubuntu-tme-server,
-      password: hashofthepassword,
+#      password: hashofthepassword,
+      password: ubuntu,
       realname: ubuntu,
       username: ubuntu,
     }
