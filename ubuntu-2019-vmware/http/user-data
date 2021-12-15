@@ -10,11 +10,11 @@ autoinstall:
         uri: http://ports.ubuntu.com/ubuntu-ports
   identity:
     {
-      hostname: ubuntu-tme-server,
+      hostname: "ubuntu-tme-server",
 #      password: hashofthepassword,
-      password: ubuntu,
-      realname: ubuntu,
-      username: ubuntu,
+#      realname: ubuntu,
+      username: "ubuntu",
+      password: "$6$uUILkQh/SgevyItE$56U3aEHQf5ft1k3quimOnWBNXECZeJ4/MgjZBCwSTwth2H1dtt2JqYgAaSNRcUUUBpm3rM6tIbsWug7HNR1ul0",
     }
   keyboard: { layout: us, toggle: null, variant: "" }
   locale: en_US
@@ -32,9 +32,12 @@ autoinstall:
           dhcp-identifier: mac
     version: 2
   ssh:
+    install-server: yes
     allow-pw: true
-    authorized-keys: []
-    install-server: true
+#    authorized-keys: []
+    authorized-keys:
+      -sha-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDjptFi6poEec6bq+mt9G51CHhHKufGvQBueV/Ee48wMSr9wfa6iZwE6nzyitbcnvgcD7qAh/SAR1uY1GVBZul2SFtUu0RM7Le2XgKnkdBSRqvcZnm3pF2/pDJW2rL88C+sh63zDD1H2CPCeSD4RiDZlQn5RSofjNHetSzIOe3Pz9RLRi2aYqq/gcoaRWfZVurHUpPvNpJEHWNvVwpBemwm/KrYYb7pKtieVpk8GlHV359H7NcwRRox+AFM/2Pq2uqZO8GrBfkTDY+GqxuF77CZJiYZ7iXl47VfLZj5TJwuVtUrRCXxECG3zujwqzSAlo+tD9pqU3AiVNnFI3/X3oCFuueEolzJgBpYQSY2NQRLdDyDYu4gtIO3Xb3fUy5ZU9K0hMU4ch5PQRIjHMIFOngRraiMS2dHZl1E8AVCDPiKyJwhe7nZzWcu/BEHyxMMCKBindKn4QlaarT7lJFFXcFKqu2urFkeA62op/+J1aa/H/rQadJXoCFuLkB442i7tBs= andresdiezsola@MacBook-Pro-de-Andres-2.local
+#    install-server: true
   storage:
     config:
       - {
