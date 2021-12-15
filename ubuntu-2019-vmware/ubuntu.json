@@ -54,8 +54,8 @@
     ],
       "shutdown_command": "echo '{{ user `ssh_password` }}'| sudo -S shutdown -P now",
 
-        "ssh_username": "ubuntu",
-        "ssh_password": "ubuntu",
+        "ssh_username": "andresdiezsola",
+        "ssh_password": "Rec0Mudez16@",
         "ssh_timeout": "20m",
         "ssh_handshake_attempts": "100",
         "ssh_port": 22,
