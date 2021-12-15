@@ -13,8 +13,8 @@ autoinstall:
       hostname: "ubuntu-tme-server",
 #      password: hashofthepassword,
 #      realname: ubuntu,
-      username: "ubuntu",
-      password: "$6$uUILkQh/SgevyItE$56U3aEHQf5ft1k3quimOnWBNXECZeJ4/MgjZBCwSTwth2H1dtt2JqYgAaSNRcUUUBpm3rM6tIbsWug7HNR1ul0",
+      username: "andresdiezsola",
+      password: "$6$cT7/YIqPpRFxRjQ5$6AmrRGsFz5oTrPba0VoJopFVX4ukRcwrkklTio6q2KvYes2JW.YqbuB58oUmsn./CqRVzdp7HYgLmnVHf1Zyp0",
     }
   keyboard: { layout: us, toggle: null, variant: "" }
   locale: en_US
